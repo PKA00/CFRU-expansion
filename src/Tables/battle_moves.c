@@ -16103,7 +16103,167 @@ const struct BattleMove gBattleMoves[] =
 		.z_move_power = 175,
 		.split = SPLIT_SPECIAL,
 		.z_move_effect = 0
-	}
+	},
+
+	[MOVE_FROSTCLAW] =
+{
+    .effect = EFFECT_ABSORB,
+    .power = 120,
+    .type = TYPE_ICE,
+    .accuracy = 95,
+    .pp = 5,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 180,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_GLACIERCRASH] =
+{
+    .effect = EFFECT_FREEZE_HIT,
+    .power = 100,
+    .type = TYPE_ICE,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 10,
+    .target = MOVE_TARGET_FOES_AND_ALLY,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 180,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_SOLARCLAW] =
+{
+    .effect = EFFECT_SOLARBEAM,
+    .power = 120,
+    .type = TYPE_FIRE,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 190,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_GHASTLYWALL] =
+{
+    .effect = EFFECT_HIT,
+    .power = 100,
+    .type = TYPE_GHOST,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_FOES_AND_ALLY,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 180,
+    .split = SPLIT_SPECIAL,
+    .z_move_effect = 0
+},
+
+[MOVE_MYSTICWAVE] =
+{
+    .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
+    .power = 80,
+    .type = TYPE_FAIRY,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 100,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .split = SPLIT_SPECIAL,
+    .z_move_power = 120,
+    .z_move_effect = 0,
+},
+
+[MOVE_FEYHAMMER] =
+{
+    .effect = EFFECT_HIT,
+    .power = 120,
+    .type = TYPE_FAIRY,
+    .accuracy = 85,
+    .pp = 10,
+    .secondaryEffectChance = 10,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 175,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_JEWELFLASH] =
+{
+    .effect = EFFECT_ACCURACY_DOWN_HIT,
+    .power = 100,
+    .type = TYPE_ROCK,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 30,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 175,
+    .split = SPLIT_SPECIAL,
+    .z_move_effect = 0
+},
+
+[MOVE_AQUAFANG] =
+{
+    .effect = EFFECT_FLINCH_HIT,
+    .power = 80,
+    .type = TYPE_WATER,
+    .accuracy = 100,
+    .pp = 10,
+    .secondaryEffectChance = 30,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 130,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_SKYDASH] =
+{
+    .effect = EFFECT_QUICK_ATTACK,
+    .power = 40,
+    .type = TYPE_FLYING,
+    .accuracy = 100,
+    .pp = 30,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 1,
+    .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 100,
+    .split = SPLIT_PHYSICAL,
+    .z_move_effect = 0
+},
+
+[MOVE_TYPHOON] =
+{
+    .effect = EFFECT_THUNDER,
+    .power = 120,
+    .type = TYPE_WATER,
+    .accuracy = 85,
+    .pp = 10,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    .z_move_power = 190,
+    .split = SPLIT_SPECIAL,
+    .z_move_effect = 0
+}
 #endif
 };
 
@@ -16694,5 +16854,16 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
     [MOVE_TEMPERFLARE] = 120,
     [MOVE_SUPERCELLSLAM] = 140,
     [MOVE_PSYCHICNOISE] = 120,
+//Custom Moves
+    [MOVE_FROSTCLAW] = 120,
+    [MOVE_GLACIERCRASH] = 120,
+    [MOVE_SOLARCLAW] = 120,
+    [MOVE_GHASTLYWALL] = 120,
+    [MOVE_MYSTICWAVE] = 120,
+    [MOVE_FEYHAMMER] = 120,
+    [MOVE_JEWELFLASH] = 120,
+    [MOVE_AQUAFANG] = 120,
+    [MOVE_SKYDASH] = 120,
+    [MOVE_TYPHOON] = 160,
 };
 #endif

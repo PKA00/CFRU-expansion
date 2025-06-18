@@ -1669,3 +1669,37 @@ User electrifies\nits body and drops\nonto the target.\nTake damage if fail.
 
 #org @DESC_PSYCHICNOISE
 Foe is prevented\nfrom recovering HP\nfor two turns.
+
+#org @DESC_FROSTCLAW
+#ifdef FROSTBITE
+The foe is slashed\nwith an icy claw.\nIt may leave the\nfoe with frostbite.
+#else
+The foe is slashed\nwith an icy claw.\nIt may leave the\nfoe frozen.
+#endif
+
+#org @DESC_GLACIERCRASH
+The user sets off a\nglacier that crashes\ninto every Pokémon\naround it.
+
+#org @DESC_SOLARCLAW
+In this two-turn move,\nthe user gathers\nlight and fills a\nclaws with light's\nenergy to attack.
+
+#org @DESC_GHASTLYWALL
+The user emits a\nterrible soundwave\nthat hits everything\naround it.
+
+#org @DESC_MYSTICWAVE
+The foe is attacked\nwith a mystical\npower of light. This\nmay lower its Sp. \nDef.
+
+#org @DESC_FEYHAMMER
+The user delivers a\ncrushing blow \ninfused with mystical\nenergy.
+
+#org @DESC_JEWELFLASH
+The user attacks by\nshooting flashes of\njewels at opposing\nteam. It may also\nlower target's accuracy.
+
+#org @DESC_AQUAFANG
+An aquatic bite.
+
+#org @DESC_SKYDASH
+The user smashes into\nthe target at high\nspeed. This move\nalways goes first.
+
+#org @DESC_TYPHOON
+The foe is caught\nin a tropical storm.\nIt may also confuse\nthe foe.
